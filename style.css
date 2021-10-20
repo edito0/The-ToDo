@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background: linear-gradient(90deg,#de6262,#ffb88c);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    /* box-shadow: 0px 0px 9px 2px black; */
+    /* background-color: rgba(255, 255, 255, 0.918); */
+}
+
+.image{
+    background:  url(navratri_yavatmal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    box-shadow: 0px 0px 9px 3px black;
+    z-index: 1;
+
+    display: flex;
+    align-items: flex-end
+}
+ 
+.image p{
+    color: #ffb88c;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin: 10px ;
+    
+}
+
+.list-container{
+    /* min-height: calc(100vh - 300px - 50px); */
+    width: 100%;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+
+.item{
+    display: flex; 
+    /* justify-content: space-between; */
+    align-items:center;
+    width: 98%;
+    height: 100%;
+    padding: 5px;
+    position: relative;
+    background-color: white;
+    margin: 2px ;
+    color: rgb(48, 48, 48);
+}
+ 
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.circle i{
+    pointer-events: none;
+}
+
+.fa-circle-check{
+    color: green;
+}
+
+
+.item-li{    
+    padding: 5px;
+    width: 92%;
+    height: 100%;
+    overflow-wrap: break-word;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+}
+
+.item-li-cut{
+    padding: 5px;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    text-decoration: line-through;
+    opacity: 50%;
+}
+
+.trash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute ;
+    right: 0px;  
+    cursor: pointer;
+    height: 100%;
+    width: 30px;
+}
+.trash i{
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+.trash:hover{
+    background-color: rgba(255, 0, 0, 0.521);
+    color: white;
+}
+
+
+
+.add-todo{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background: linear-gradient(90deg,#de6262,#ffb88c); */
+    /* background-color: #de6262; */
+    background-color: white;
+    margin: 0px 0px 2px 0px;
+}
+
+.input{
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    
+    outline: none;
+    border: none;
+    height: 40px ;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 5px;
+    margin: 0px 0px 0px 5px;
+    background-color: rgba(255, 255, 255, 0);
+    /* color: white; */
+}
+
+
+.add-btn{  
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    font-size: 35px;
+    background-color: #ffb88c;
+    color:white ;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.add-btn i{  
+   pointer-events: none;
+}
+
+.add-btn:hover{
+    background-color: white;
+    color: #ffb88c;
+}
+
+@media only screen and (max-width:1100px){
+
+    .container{
+        width: 70%;   
+   }
+    
+}
+
+@media only screen and (max-width:550px){
+
+    .container{
+        width: 100%;   
+   }
+    
+}
+
