@@ -196,3 +196,31 @@ body{
     
 }
 
+@media only screen and (max-width:860px){
+
+    .item-li{    
+        padding: 5px;
+        width: 90%;
+        
+    }
+}
+
+@media only screen and (max-width:700px){
+
+    .item-li{    
+        padding: 5px;
+        width: 86%;
+        
+    }
+}
+
+
+@media only screen and (max-width:300px){
+
+    .item-li{    
+        padding: 5px;
+        width: 83%;
+        
+    }
+}
+
